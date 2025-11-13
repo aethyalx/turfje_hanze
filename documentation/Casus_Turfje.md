@@ -24,11 +24,8 @@ Het veilig stellen (encrypten) en opslaan van privégegevens zonder dat deze pub
 - Publieke API
 
 ## Prototype (globaal)
-Het prototype laat zien dat een gebruiker medicijnen kan toevoegen, een innameschema kan instellen, pushmeldingen ontvangt en innames kan afvinken. Het dagoverzicht werkt en gegevens worden veilig en afgeschermd opgeslagen.
+Het prototype laat zien dat we data kunnen encrypten en decrypten door middel van een private en public key
 
 # Succescriteria
-- Gebruiker kan medicijn + schema toevoegen en notificaties ontvangen.
-- Afvinken werkt en het dagoverzicht toont ingenomen/gemiste innames.
+- We kunnen het originele 'geencrypte' bericht gedecrypt laten lezen door middel van de public en private key
 - Gevoelige data is niet leesbaar in platte tekst (versleuteld/opgesloten).
-- Alleen geautoriseerde personen kunnen data zien.
-- Prototype is bruikbaar en begrijpelijk voor testgebruikers.
