@@ -2,6 +2,8 @@
 <img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/scuffedwhite.png" alt="Intro" width="500"/>
 
 ## Documenten
+### Casus
+➡️ [Ga naar Casus](https://github.com/aethyalx/turfje_hanze/blob/main/documentation/Casus_Turfje.md)
 ### Functioneel ontwerp
 ➡️ [Ga naar functioneel ontwerp](https://github.com/aethyalx/turfje_hanze/blob/main/documentation/FO_Turfje.md)
 ### Technisch ontwerp
