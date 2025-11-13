@@ -146,20 +146,3 @@ $signatureBase64 = base64_encode($signature);
 $result = openssl_verify($data, $signature, $publicKey, OPENSSL_ALGO_SHA256);
 // $result: 1 = valid, 0 = invalid, -1 = error
 ```
-
-## Troubleshooting
-
-### "Ongeldige digitale handtekening"
-- Controleer of client en server dezelfde data ondertekenen
-- Verificeer dat public keys correct worden uitgewisseld
-
-### "Server handtekening verificatie gefaald"
-- Zorg dat server's public key correct wordt opgeslagen
-- Check of response data niet wordt gewijzigd tijdens transport
-
-## Toekomstige Verbeteringen
-
-- [ ] Timestamp verificatie voor replay attack preventie.
-- [ ] Certificate authority (CA) ondersteuning.
-- [ ] Perfect Forward Secrecy met ephemeral keys.
-- [ ] Rate limiting en brute force protectie.
