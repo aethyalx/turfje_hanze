@@ -3,8 +3,8 @@
 
 ## Documenten
 ### Functioneel ontwerp
-➡️ [Ga naar functioneel ontwerp](https://github.com/aethyalx/turfje_hanze/blob/main/FO_Turfje.md)
+➡️ [Ga naar functioneel ontwerp](https://github.com/aethyalx/turfje_hanze/blob/main/documents/FO_Turfje.md)
 ### Technisch ontwerp
-➡️ [Ga naar technisch ontwerp](https://github.com/aethyalx/turfje_hanze/blob/main/TO_Turfje.md)
+➡️ [Ga naar technisch ontwerp](https://github.com/aethyalx/turfje_hanze/blob/main/documents/TO_Turfje.md)
 
-➡️ [Ga naar extra bijlage: RSA Signatures](https://github.com/aethyalx/turfje_hanze/blob/main/TO_Digital_Signatures.md)
+➡️ [Ga naar extra bijlage: RSA Signatures](https://github.com/aethyalx/turfje_hanze/blob/main/documents/TO_Digital_Signatures.md)
