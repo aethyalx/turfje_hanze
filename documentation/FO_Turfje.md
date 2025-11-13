@@ -88,9 +88,9 @@ We sorteren de requirements op prioriteit, waar 1 het hoogste prioriteitsniveau 
 ---
 
 ### Toelichting Prioriteit
-1 = Must have – Nodig voor basisfunctionaliteit.
-2 = Should have – Maakt de applicatie gebruiksvriendelijker.
-3 = Nice to have – Extra toevoeging.
+- 1 = Must have – Nodig voor basisfunctionaliteit.
+- 2 = Should have – Maakt de applicatie gebruiksvriendelijker.
+- 3 = Nice to have – Extra toevoeging.
 
 ---
 
