@@ -20,7 +20,7 @@ Het veilig stellen (encrypten) en opslaan van privégegevens zonder dat deze pub
 
 ## Technologieën (globaal)
 - PHP (mogelijk Symfony)
-- JSON
+- MariaDB
 - Publieke API
 
 ## Prototype (globaal)
