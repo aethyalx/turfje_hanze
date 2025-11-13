@@ -44,7 +44,7 @@ Wat Turfje **niet** zal doen:
 ---
 
 ## Requirements
-
+We sorteren de requirements op prioriteit, waar 1 het hoogste prioriteitsniveau is en 3 het laagste.
 ### Algemene Gebruiker
 | Wensnummer | Beschrijving | Prioriteit | Geschatte grootte |
 |-------------|---------------|-------------|--------------------|
