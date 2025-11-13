@@ -95,7 +95,7 @@ We sorteren de requirements op prioriteit, waar 1 het hoogste prioriteitsniveau 
 ---
 
 ## Use Cases
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/usecases.png" alt="Usecase Diagram" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/usecasesv2.png" alt="Usecase Diagram" width="500"/>
 
 ---
 
