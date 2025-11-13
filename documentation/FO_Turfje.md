@@ -13,10 +13,9 @@ Het document geeft een overzicht van functionele wensen van de gebruiker. Dit di
 ## Gebruikers en Rollen
 
 De applicatie kent de volgende rollen:
-
-- **Patiënt** – Dit is de hoofdgebruiker van de applicatie. De patiënt houdt in de applicatie zijn medicijngebruik bij.
-- **Behandelaar** – Deze gebruiker kan het medicijngebruik (turven) van zijn/haar patiënten inzien, schema’s opstellen, medicijnen koppelen en feedback geven.
-- **Administrator** – Deze rol biedt technische hulp en voert systeemonderhoud uit.
+-	**Patiënt** – Dit is de hoofdgebruiker van de applicatie. De patiënt houdt in de applicatie zijn medicijngebruik bij. 
+-	**Behandelaar** – Deze gebruiker zal het medicijngebruik (turven) van zijn/haar patiënten kunnen inzien. Ook kan deze rol ondersteuning bieden aan een patiënt door schema’s op te stellen, medicijnen te koppelen en feedback te geven over het medicijngebruik. Een behandelaar kan iedere persoon zijn die een patiënt wil ondersteunen. Bijvoorbeeld een dokter, ouder of vriend.
+-	**Administrator** – Deze rol bestaat om andere gebruikers technische hulp te bieden. Ook zal deze gebruiker systeemonderhoud verrichten.
 
 ---
 
@@ -24,23 +23,23 @@ De applicatie kent de volgende rollen:
 
 ### Binnen scope
 Turfje zal de volgende onderdelen ondersteunen:
-- Inloggen als patiënt, behandelaar of administrator.
-- Bijhouden van medicijninname via een turfsysteem.
-- Maken van medicatieschema’s.
-- Gegevens inzichtelijk maken voor de behandelende arts.
-- Versturen van herinneringen voor medicijninname.
-- Connectie met externe medicijnendatabase.
-- Berichtenuitwisseling tussen patiënt en behandelaar.
-- Feedbackfunctionaliteit van behandelaar naar patiënt.
+-	Het inloggen in de applicatie als patiënt, behandelaar of administrator.
+-	Het bijhouden van medicijninname van de patiënt via een turfsysteem.
+-	Het maken van een schema om te bepalen wanneer medicijnen ingenomen dienen te worden.
+-	Deze gegevens inzichtelijk maken voor de behandelende arts.
+-	Het versturen van een herinnering om de patiënt te helpen bij het tijdig gebruiken van de medicijnen.
+-	Een connectie met een externe medicijnendatabase om patiënten eenvoudig informatie te kunnen bieden over hun medicijnen.
+-	Een patiënt kan berichten achterlaten die de arts kan lezen. Bijvoorbeeld het beschrijven van klachten of bijwerkingen bij bepaalde medicijnen.
+-	De mogelijkheid bieden voor een behandelaar om feedback te geven op berichten van de patiënt.
 
 ### Buiten scope
 Wat Turfje **niet** zal doen:
-- Advies geven over medicijngebruik.
-- Recepten aanvragen bij apotheek.
-- Koppeling met verzekering.
-- Betaling van medicijnen.
-- Integratie met slimme pillendoosjes of hardware.
-- Delen van patiëntgegevens met derden.
+-	Advies geven over medicijngebruik
+-	Recepten of herhaalrecepten opvragen bij de apotheek.
+-	Directe koppeling leggen met de verzekering.
+-	Het betalen van medicijnen.
+-	Integratie met slimme pillendoosjes of andere hardware
+-	Het delen van patiëntgegevens met derden anders dan de behandelaar.
 
 ---
 
