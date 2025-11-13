@@ -59,19 +59,6 @@ php client.php
 php test_signatures.php
 ```
 
-## Nieuwe Functionaliteit
-
-### Server Verbeteringen
-- ✅ **Signature Verificatie**: Controleert client identiteit
-- ✅ **Response Signing**: Ondertekent alle server responses
-- ✅ **Error Handling**: Betere foutafhandeling voor ongeldige signatures
-
-### Client Verbeteringen  
-- ✅ **Request Signing**: Ondertekent alle client requests
-- ✅ **Server Verificatie**: Verifieert server responses
-- ✅ **Enhanced Doctor Menu**: Betere data integriteit checks
-- ✅ **Visual Feedback**: Duidelijke ✅/❌ indicators
-
 ## API Changes
 
 ### Client Request (Nieuw format)
@@ -146,3 +133,4 @@ $signatureBase64 = base64_encode($signature);
 $result = openssl_verify($data, $signature, $publicKey, OPENSSL_ALGO_SHA256);
 // $result: 1 = valid, 0 = invalid, -1 = error
 ```
+
