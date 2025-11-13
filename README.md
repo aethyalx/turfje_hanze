@@ -10,3 +10,6 @@
 ➡️ [Ga naar extra bijlage: RSA Signatures](https://github.com/aethyalx/turfje_hanze/blob/main/documentation/TO_Digital_Signatures.md)
 ### Prototype
 ➡️ [Ga naar prototype](https://github.com/aethyalx/turfje_hanze/blob/main/prototype/)
+
+
+Gemaakt door Sam, Maarten, Josh en Obada (ITD3A)
