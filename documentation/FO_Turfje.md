@@ -95,7 +95,7 @@ We sorteren de requirements op prioriteit, waar 1 het hoogste prioriteitsniveau 
 ---
 
 ## Use Cases
-_Hier komen diagrammen, stroomschema’s of procesflows._
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/usecases.png" alt="Usecase Diagram" width="500"/>
 
 ---
 
@@ -212,22 +212,22 @@ Patiënt en behandelaar kunnen feedback delen over medicijngebruik.
 <img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/1-Intro.png" alt="Intro" width="500"/>
 
 ### Inloggen
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/2-Login.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/2-Login.png" alt="Login" width="500"/>
 
 ### Registreren
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/3-Registreren.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/3-Registreren.png" alt="Registreren" width="500"/>
 
 ### Dashboard
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/4-Dashboard.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/4-Dashboard.png" alt="Dashboard" width="500"/>
 
 ### Instellingen
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/5-Instellingen.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/5-Instellingen.png" alt="Instellingen" width="500"/>
 
 ### Schemas
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/6-Schemas.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/6-Schemas.png" alt="Schemas" width="500"/>
 
 ### Medicijnen
-<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/7-Medicijnen.png" alt="Intro" width="500"/>
+<img src="https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/7-Medicijnen.png" alt="Medicijnen" width="500"/>
 
 ## Randvoorwaarden
 _De applicatie moet voldoen aan minimale eisen voor performance, toegankelijkheid en veiligheid._
