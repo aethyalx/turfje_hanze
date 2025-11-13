@@ -28,7 +28,7 @@ Turfje zal de volgende onderdelen ondersteunen:
 -	Het maken van een schema om te bepalen wanneer medicijnen ingenomen dienen te worden.
 -	Deze gegevens inzichtelijk maken voor de behandelende arts.
 -	Het versturen van een herinnering om de patiënt te helpen bij het tijdig gebruiken van de medicijnen.
--	Een connectie met een externe medicijnendatabase om patiënten eenvoudig informatie te kunnen bieden over hun medicijnen.
+-	Een connectie met een externe medicijnendatabase om patiënten eenvoudig informatie te kunnen bieden over hun medicijnen. (met disclaimer dat deze informatie onjuist kan zijn. afkomstig van fda.gov)
 -	Een patiënt kan berichten achterlaten die de arts kan lezen. Bijvoorbeeld het beschrijven van klachten of bijwerkingen bij bepaalde medicijnen.
 -	De mogelijkheid bieden voor een behandelaar om feedback te geven op berichten van de patiënt.
 
