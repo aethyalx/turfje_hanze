@@ -169,8 +169,8 @@ Raadplegen en opslaan van medicatiegegevens, inclusief apotheekinformatie.
 - Medicijn toevoegen aan "Mijn Medicijnen".
 - Zoeken en verwijderen binnen opgeslagen medicijnen.
 
-**T15 – Apotheekinformatie**
-- Lijst met apotheken die medicijn verkopen.
+**T15 – Apotheekinformatie** (nice to have)
+- Lijst met apotheken die medicijn verkopen. (Indien mogelijk middels een api. Wordt op dit moment nog onderzocht)
 - Zoeken op postcode of apotheeknaam.
 
 ---
