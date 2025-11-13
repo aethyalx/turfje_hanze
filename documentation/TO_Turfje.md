@@ -1,6 +1,6 @@
 # Technisch Ontwerp – Turfje
 
-## 1. Technische Stack
+# 1. Technische Stack
 - **Frontend**: React Native (Android & iOS)
 - **Backend**: Laravel (PHP 8.5+)
 - **Database**: PostgreSQL
@@ -10,16 +10,16 @@
 
 ---
 
-## 2. Kernmodules
+# 2. Kernmodules
 
-### 2.1 Authenticatie & Gebruikersbeheer
+## 2.1 Authenticatie & Gebruikersbeheer
 - Gebruikers registreren/aanmelden met e-mail, wachtwoord en rol (`patient`, `behandelaar`, `administrator`).
 - JWT wordt uitgegeven bij inloggen en veilig opgeslagen (versleuteld op het apparaat).
 - Wachtwoordherstel via e-mailtoken.
 - Accountverwijdering vereist bevestiging (via e-mail of in de app).
 - **Accountkoppeling** via een eenmalige koppelcode (gegenereerd door patiënt, ingevoerd door behandelaar/admin).
 
-### 2.2 Medicatie & Schema’s
+## 2.2 Medicatie & Schema’s
 - Gebruikers kunnen:
   - Medicijnen toevoegen/verwijderen uit een **openbare medicijnen-database** (bijv. openFDA of vergelijkbare gratis bron).
   - Schema’s aanmaken/bewerken/verwijderen (medicijn, dosering, tijdstip, frequentie: dagelijks/wekelijks/tijdelijk).
@@ -27,7 +27,7 @@
 - Schema’s ondersteunen pauzeren, bewerken en verwijderen.
 - Kalenderweergave toont aankomende innames.
 
-### 2.3 Databeledeling
+## 2.3 Databeledeling
 - Alleen **gekoppelde gebruikers** (patiënt ↔ behandelaar) kunnen inzien:
   - Turfgeschiedenis
   - Schema’s
@@ -35,7 +35,7 @@
 - Alle schrijfacties van gevoelige data bevatten een **digitale handtekening** voor integriteit en non-repudiation.
 - Beheerders (**admins**) **kunnen geen patiëntgegevens inzien**, tenzij expliciet gekoppeld.
 
-### 2.4 Notificaties & Herinneringen
+## 2.4 Notificaties & Herinneringen
 - **Twee lokale pushmeldingen** per geplande dosis:
   1. **Voorherinnering** (bijv. 15 minuten van tevoren) – optioneel per medicijn.
   2. **Tijdstip-herinnering** – verplicht.
@@ -43,18 +43,18 @@
 - Alles **offline-first**: werkt zonder internet, synchroniseert bij verbinding.
 - **Geen backend-betrokkenheid** bij het verzenden van meldingen.
 
-### 2.5 Medicatie-informatie & Apotheekzoeker
+## 2.5 Medicatie-informatie & Apotheekzoeker
 - Zoek openbare medicijneninfo op naam/merk: naam, dosering, werkzame stoffen, bijwerkingen, bijsluiter.
 - Medicijnen opslaan in “Mijn Medicijnen”.
 - **Apotheekzoeker** (optioneel): alleen indien er een **gratis, openbare Nederlandse apotheek-API** bestaat. Zo niet, dan wordt dit weggelaten (FO T15 = “nice to have”).
 
-### 2.6 Feedbacksysteem
+## 2.6 Feedbacksysteem
 - Patiënten kunnen tekstfeedback geven per medicijn (bijv. bijwerkingen, effectiviteit).
 - Behandelaren kunnen direct reageren.
 - Alle berichten worden opgeslagen met tijdstempel en digitaal ondertekend.
 - Zichtbaar in een apart feedbackoverzicht.
 
-### 2.7 Beheeromgeving (Laravel Web Dashboard)
+## 2.7 Beheeromgeving (Laravel Web Dashboard)
 - Gebouwd met Bootstrap (geen externe UI-bibliotheken).
 - Admin kan:
   - Alle gebruikers bekijken/zoeken
@@ -66,7 +66,7 @@
 
 ---
 
-## 3. Beveiliging & Privacy
+# 3. Beveiliging & Privacy
 - **Geen delen van patiëntgegevens met derden**, behalve met de gekoppelde behandelaar (FO: "Geen delen met derden behalve behandelaar").
 - Gevoelige schrijfacties (turven, feedback) worden **digitaal ondertekend** (Laravel `openssl_sign`).
 - JWT’s veilig opgeslagen:
@@ -78,11 +78,11 @@
 
 ---
 
-## 4. Database Schema
+# 4. Database Schema
 
-![Db overview](https://media.discordapp.net/attachments/1437886470907236563/1438535585189990480/afbeelding.png?ex=69173c2a&is=6915eaaa&hm=cfcbc69f1d035414b0dc9b9a74fe0242c2b496093e6a03175af14864726718af&=&format=webp&quality=lossless)
+![Db overview](https://r2.fivemanage.com/wqMuL8aYWTwEuuMyYBW4d/ERD.png)
 
-### Table: Gebruikers
+## Table: Gebruikers
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
@@ -93,7 +93,7 @@
 
 ---
 
-### Table: Gebruiker_koppelingen
+## Table: Gebruiker_koppelingen
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
@@ -105,7 +105,7 @@
 
 ---
 
-### Table: Medicijnen
+## Table: Medicijnen
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
@@ -118,7 +118,7 @@
 
 ---
 
-### Table: Gebruiker_medicijn
+## Table: Gebruiker_medicijn
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
@@ -128,52 +128,41 @@
 
 ---
 
-### Table: Gebruiker_medicijn_gebruik
+## Table: Gebruiker_medicijn_gebruik
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
-| gms_id | uuid [ref: > Gebruiker_medicijn_schema.id] |  |
+| gmn_id | integer [ref: > Gebruiker_medicijn.id] |  |
+| gms_id | integer [ref: > Gebruiker_medicijn_schema.id] |  |
 | medicijn_turven | text | versleuteld |
 | aangemaakt_op | timestamp |  |
 
 ---
 
-### Table: Gebruiker_medicijn_schema
+## Table: Gebruiker_medicijn_schema
 | Column | Type | Description |
 |--------|------|-------------|
 | id | uuid [pk] |  |
-| gmn_id | uuid [ref: > Gebruiker_medicijn.id] |  |
+| gmn_id | integer [ref: > Gebruiker_medicijn.id] |  |
 | medicijn_schema | text | versleuteld |
 | aangemaakt_op | timestamp |  |
 
 ---
 
-### Table: Data_sleutels
+## Table: Log_meldingen
 | Column | Type | Description |
 |--------|------|-------------|
-| id | uuid [pk] |  |
-| tabelnaam | varchar(50) |  |
-| gegeven_id | uuid | de id uit de bijbehorende tabel |
-| gebruiker_id | uuid [ref: > Gebruikers.id] |  |
-| datasleutel | text | versleuteld |
-| aangemaakt_op | timestamp |  |
-
----
-
-### Table: Log_meldingen
-| Column | Type | Description |
-|--------|------|-------------|
-| id | uuid |  |
+| id | integer [pk] |  |
 | tijdstip | date |  |
 | onderdeel | varchar2(200) |  |
 | melding | varchar2(2000) |  |
 
 ---
 
-### Table: Gebruiker_auth
+## Table: Gebruiker_auth
 | Column | Type | Description |
 |--------|------|-------------|
-| id | uuid |  |
+| id | uuid [pk] |  |
 | email | varchar2(255) | username |
 | wachtwoord_hash | varchar2(255) |  |
 | laatste_login | timestamp |  |
@@ -182,16 +171,7 @@
 
 ---
 
-## 5. Buiten Scope (conform FO)
-- Medisch advies of diagnose
-- Elektronische recepten of verzekeringintegratie
-- Betalingsverwerking
-- Hardware-integratie (bijv. slimme pillendoosjes)
-- Geen betaalde API’s of cloudservices
-
----
-
-# Voorgestelde API-endpoints
+# 5. Voorgestelde API-endpoints
 
 Alle endpoints geven JSON terug. Authenticatie vereist, tenzij anders aangegeven.
 
