@@ -2,7 +2,7 @@
 
 # 1. Technische Stack
 - **Frontend**: React Native (Android & iOS)
-- **Backend**: Laravel (PHP 8.5+)
+- **Backend**: Laravel
 - **Database**: MariaDB
 - **Authenticatie**: JWT (kortstondige tokens + refresh via beveiligde opslag)
 - **Data-integriteit**: Gevoelige gegevens (bijv. turven, feedback) worden **digitaal ondertekend** met OpenSSL (privésleutel veilig opgeslagen op het apparaat).
